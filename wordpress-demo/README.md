@@ -7,7 +7,7 @@ The app will be deployed into the `default` namespace.
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: speedtest-plotter
+  name: wordpress-demo
   namespace: fleet-default
 spec:
   branch: main
