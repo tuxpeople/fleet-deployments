@@ -8,7 +8,7 @@ kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: speedtest-plotter
-  namespace: fleet-local
+  namespace: fleet-default
 spec:
   repo: https://github.com/tuxpeople/fleet-deployments
   paths:
