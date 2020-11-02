@@ -10,7 +10,7 @@ metadata:
   name: speedtest-plotter
   namespace: fleet-local
 spec:
-  repo: https://github.com/rancher/fleet-examples/
+  repo: https://github.com/tuxpeople/fleet-deployments
   paths:
-  - simple
+  - speedtest-plotter
 ```
