@@ -17,7 +17,7 @@ spec:
         image: tdeutsch/speedtest-plotter:latest
         env:
           - name: SERVERID
-            value: 28472
+            value: "28472"
         resources:
           requests:
             cpu: 100m
