@@ -10,6 +10,7 @@ metadata:
   name: speedtest-plotter
   namespace: fleet-default
 spec:
+  branch: main
   repo: https://github.com/tuxpeople/fleet-deployments
   paths:
   - speedtest-plotter
