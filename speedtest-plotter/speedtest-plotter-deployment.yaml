@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: speedtest-plotter
+spec:
+  selector:
+    matchLabels:
+      app: speedtest-plotter
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: speedtest-plotter
+    spec:
+      containers:
+      - name: speedtest-plotter
+        image: tdeutsch/speedtest-plotter:latest
+        env:
+          - name: SERVERID
+            value: 28472
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 500m
+            memory: 200Mi
+        ports:
+        - containerPort: 8000
