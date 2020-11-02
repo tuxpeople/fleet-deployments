@@ -27,3 +27,10 @@ spec:
             memory: 200Mi
         ports:
         - containerPort: 8000
+        volumeMounts:
+        - mountPath: /data
+          name: speedtest-plotter-data
+      volumes:
+        - name: podsync-data
+          persistentVolumeClaim:
+            claimName: speedtest-plotter-data
