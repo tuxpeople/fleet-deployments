@@ -31,6 +31,6 @@ spec:
         - mountPath: /data
           name: speedtest-plotter-data
       volumes:
-        - name: podsync-data
+        - name: speedtest-plotter-data
           persistentVolumeClaim:
             claimName: speedtest-plotter-data
