@@ -11,4 +11,4 @@ spec:
       paths:
       - backend:
           serviceName: speedtest-plotter
-          servicePort: 8080
+          servicePort: 8000
