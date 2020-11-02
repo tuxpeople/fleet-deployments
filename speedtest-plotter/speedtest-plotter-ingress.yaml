@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    app: speedtest-plotter
+  name: speedtest-plotter
+spec:
+  rules:
+  - host: speedtest-plotter.192.168.88.253.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: speedtest-plotter
+          servicePort: 8080
