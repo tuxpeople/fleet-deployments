@@ -4,7 +4,7 @@ metadata:
   name: wordpress
 spec:
   rules:
-  - host: wordpress.192.168.88.253.nip.io
+  - host: wordpress1.192.168.88.253.nip.io
     http:
       paths:
       - path: /
